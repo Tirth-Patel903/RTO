@@ -1,0 +1,70 @@
+﻿<%@ Master Language="VB" CodeFile="RTOMASTER.master.vb" Inherits="RTOMASTER" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Image ID="Image1" runat="server" Height="200px" ImageUrl="~/HEADER.jpg" 
+            Width="1500px" />
+            
+    </div>
+    <div>
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Width="608px">
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/Login.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Sign Up" Value="Sign Up" NavigateUrl="~/sign up.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="About Us" Value="About Us" NavigateUrl="~/about us.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Contact us" Value="Contact us" 
+                    NavigateUrl="~/contact us .aspx"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                <br />
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+        <div>
+          
+              
+                  
+                        <asp:HyperLink ID="HyperLink1" runat="server">Home</asp:HyperLink>
+                
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                        <asp:HyperLink ID="HyperLink2" runat="server">About us</asp:HyperLink> 
+                  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                  
+                        <asp:HyperLink ID="HyperLink3" runat="server">Contact us</asp:HyperLink>  
+                  
+               
+           
+        </div>
+    </div>
+    <div style="Width: 1024px">
+        <asp:Image ID="Image2" runat="server"
+            ImageUrl="img/1.jpg.jpg"  Width="1500px" Height="200px" />
+            
+    </div>
+    </form>
+</body>
+</html>
